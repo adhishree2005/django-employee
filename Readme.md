@@ -36,23 +36,31 @@ A sleek and efficient web-based Employee Management System built with Django. It
 ```bash
 git clone https://github.com/yourusername/django-employee-manager.git
 cd django-employee-manager
+```
+2. **Create a Virtual Environment:**
 
-
-### 2. Setup Virtual Environment
-''' bash
-
+```bash
 python -m venv venv
-source venv/bin/activate  # or venv\Scripts\activate on Windows
-### 3. Install Dependencies
-bash
+venv\Scripts\activate   # On Windows
+# OR
+source venv/bin/activate  # On Mac/Linux
+```
 
-pip install -r requirements.txt
-### 4. Run Migrations
+3. **Install Dependencies:**
 
+```bash
+pip install django mysqlclient
+```
+
+4. **Run Migrations:**
+
+```bash
 python manage.py makemigrations
 python manage.py migrate
+```
 
-### 5. Start Development Server
-bash
+5. **Start the Development Server:**
 
+```bash
 python manage.py runserver
+```
